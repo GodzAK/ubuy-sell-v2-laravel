@@ -1,0 +1,41 @@
+/* Basic footer styling */
+footer { text-align: center; padding: 15px; background-color: #800000; color: white; width: 100%; box-sizing: border-box; font-size: 14px; margin-top: auto; }
+
+/* Footer paragraph styling */
+footer p {
+    font-size: 12px;  /* Reduced font size for a more compact footer */
+    margin: 5px 0;  /* Reduced space between paragraphs */
+}
+
+/* Footer links styling */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;  /* Reduced font size for links */
+    margin: 0 8px;  /* Reduced margin between links */
+}
+
+footer a:hover {
+    color: #030303; /* Change color on hover */
+}
+
+/* Last link styling */
+footer a:last-child {
+    margin-right: 0; /* No margin on the right side of the last link */
+}
+
+/* Styling for social links */
+footer .social-links {
+    margin-top: 10px; /* Reduced space above the social links */
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;  /* Slightly smaller font size for social icons */
+    margin: 0 12px;  /* Reduced margin between social icons */
+}
+
+footer .social-links a:hover {
+    color: #000407;
+}

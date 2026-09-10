@@ -1,0 +1,181 @@
+body {
+    font-family: "Vollkorn", serif;
+    background-color: #f9f9f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+    display: flex;
+    flex-direction: column; /* Allow the content to stack vertically */
+    min-height: 100vh; /* Ensure the page is at least the height of the viewport */
+}
+
+header {
+    width: 100%;
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form {
+    max-width: 400px; /* Adjusted width for better compactness */
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Subtle border color */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+    margin: 100px auto; /* Center the form and add space from header */
+    margin-top: 150px; /* Add more space from the header */
+}
+
+.login-form:hover {
+    transform: translateY(-5px); /* Add hover effect for slight lift */
+}
+
+/* Form Title Styling */
+.login-form h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form fields and button styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Form label styling */
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Form fields (input) */
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused state for input fields */
+.form-group input:focus {
+    border-color: #800000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.5); /* Red shadow on focus */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #800000;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9b2d20; /* Darker shade for hover */
+}
+
+.btn:active {
+    background-color: #6b1a13; /* Darkest shade for active state */
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #800000;
+    color: white;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px; /* Position the modal */
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal p {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: bold;
+}
+
+.forgot-password-link {
+    color: #800000; /* Match form's color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}

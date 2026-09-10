@@ -1,0 +1,292 @@
+/* General Reset and Container Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Vollkorn", serif;
+    line-height: 1.6;
+    background-color: #fffefe;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+/* Header and Title */
+h2 {
+    font-size: 2.5em;
+    color: #7A1C27;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-right: 13%;
+    font-weight: 500;
+}
+
+/* Marketplace Items Section */
+.marketplace-items {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Stack categories vertically */
+    gap: 50px; /* Space between categories */
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+/* Category Box Styles */
+.category-box {
+    background-color: #7A1C27;
+    padding: 30px;
+    margin: 0 5%;
+    max-width: 1300px;
+    width: 1100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Category Title Styles */
+.category-title {
+    font-size: 2.2em;
+    color: #f9f8f8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Item Grid: Ensure it wraps items and stays within the container */
+.item-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap if they exceed available space */
+    gap: 30px; /* Space between items */
+    justify-content: center;
+    width: 100%;
+}
+
+.item-card {
+    background-color: #855757;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Make sure it takes full width on small screens */
+    max-width: 300px; /* Restrict maximum width */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    margin: 15px;
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Center text */
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+}
+
+.item-card img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    max-height: 200px; /* Limit the height of the image */
+    object-fit: contain; /* Make sure the image fits inside the container without stretching */
+    margin-bottom: 15px; /* Add spacing below the image */
+    border-radius: 5px; /* Optional: add rounded corners to the image */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ffffff; /* White background */
+    color: #940101; /* Red text color */
+    font-size: 16px;
+   
+    border: 2px solid #ffa1a1; /* Border */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #542828; /* Dark red background on hover */
+    color: #ffffff; /* White text color on hover */
+    border-color: #5c3636; /* Border color on hover */
+}
+
+/* Sell Item Button Container */
+.sell-item-btn-container {
+    margin-top: 40px;
+    align-items: center;
+    color: blue;
+}
+
+/* Category Buttons */
+.category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.category-buttons {
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    display: inline-block;
+}
+
+
+.category-buttons:focus {
+    outline: none;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: #800000;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #80000075;
+    color: white;
+}
+/* Pagination Button Styles */
+.pagination-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.pagination .page-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination .page-item a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    color: #7a1c27;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination .page-item a:hover {
+    background-color: #7A1C27;
+    color: white;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .category-box {
+        margin: 0 5%;
+        max-width: 100%;
+    }
+
+    .item-grid {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .item-card {
+        width: 100%; /* Item card takes full width on smaller screens */
+        max-width: 100%; /* Remove max-width limitation */
+        height: auto; /* Allow flexible height */
+    }
+
+    .item-card img {
+        max-height: 150px; /* Optionally adjust the image height on smaller screens */
+    }
+    .category-title {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Style for success notification */
+.notification.alert-success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
